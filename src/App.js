@@ -24,6 +24,9 @@ function App() {
       localStorage.setItem("theme", "light");
       setTheme(localStorage.getItem("theme"));
     }
+    if (localStorage.getItem("theme") === "dark") {
+      document.body.style.backgroundColor = "#121212"
+    }
   }, []);
 
   return (

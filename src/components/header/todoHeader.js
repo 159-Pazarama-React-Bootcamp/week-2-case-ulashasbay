@@ -6,9 +6,11 @@ function TodoHeader({ username, theme, setTheme }) {
     if (theme === "dark") {
       localStorage.setItem("theme", "light");
       setTheme(localStorage.getItem("theme"));
+      document.body.style.backgroundColor = "#fff";
     } else {
       localStorage.setItem("theme", "dark");
       setTheme(localStorage.getItem("theme"));
+      document.body.style.backgroundColor = "#121212";
     }
   };
 
