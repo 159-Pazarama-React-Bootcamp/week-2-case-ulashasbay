@@ -5,7 +5,8 @@ function LoginForm({ setUsername }) {
   // Login input alanına yazılan yazıların tutulduğu state
   const [loginInput, setLoginInput] = useState("");
 
-  // Login Form submit edildiğinde input içine yazılan username'in localstorage içine kaydedilmesini ve bu localstoragedeki username bilgisinin username state ine atanmasını sağlayan fonksiyon
+  // Login Form submit edildiğinde input içine yazılan username'in localstorage içine kaydedilmesi
+  // localstoragedeki username bilgisinin username state ine atanmasını sağlayan fonksiyon
   const handleLoginSubmit = (e) => {
     if (e.target.value !== "") {
       localStorage.setItem("username", loginInput);
